@@ -1,8 +1,3 @@
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.ave import Ave
-from zooAnimales.reptil import Reptil
-from zooAnimales.pez import Pez
-from zooAnimales.anfibio import Anfibio
 class Animal:
     _totalAnimales = 0
 
@@ -11,8 +6,7 @@ class Animal:
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
-        if len(self._zona) == 0:
-            self._zona = []
+        self._zona = []
         Animal._totalAnimales += 1
         
     #metodos get
@@ -52,6 +46,11 @@ class Animal:
         return "desplazarse"
     
     def totalPorTipo(self):
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.ave import Ave
+        from zooAnimales.reptil import Reptil
+        from zooAnimales.pez import Pez
+        from zooAnimales.anfibio import Anfibio
         return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" + "Aves: " + Ave.cantidadAves() + "\n" + "Reptiles: " + Reptil.cantidadReptiles() + "\n" + "Peces: " + Pez.cantidadPeces() + "\n" + "Anfibios: " + Anfibio.cantidadAnfibios()
     
     def toString(self):
