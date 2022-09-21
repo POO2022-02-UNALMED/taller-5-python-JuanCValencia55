@@ -3,7 +3,7 @@ from zooAnimales.animal import Animal
 class Reptil(Animal):
     _listado = []
     iguanas = 0
-    serpienetes = 0
+    serpientes = 0
 
     def __init__(self, nombre = "", edad = 0, habitat = "", genero = "", colorEscamas = "", largoCola = 0):
         super().__init__(nombre, edad, habitat, genero)
@@ -42,5 +42,5 @@ class Reptil(Animal):
     @classmethod
     def crearSerpiente(cls, nombre = "", edad = 0, genero = ""):
         serpiente = Reptil(nombre, edad, "jungla", genero, "blanco", 1)
-        cls.serpienetes +=1
+        cls.serpientes +=1
         return serpiente
