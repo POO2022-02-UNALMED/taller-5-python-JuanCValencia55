@@ -40,7 +40,7 @@ class Anfibio(Animal):
         return rana
     
     @classmethod
-    def crarSalamandra(cls, nombre = "", edad = 0, genero = ""):
+    def crearSalamandra(cls, nombre = "", edad = 0, genero = ""):
         salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         cls.salamandras += 1
         return salamandra

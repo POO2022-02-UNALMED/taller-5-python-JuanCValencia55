@@ -2,8 +2,7 @@ class Zona:
     def __init__(self, nombre = "", zoo = ""):
         self._nombre = nombre
         self._zoo = [zoo]
-        if len(self._animales) == 0:
-            self._animales = []
+        self._animales = []
         
     #metodos get
     def getNombre(self):
