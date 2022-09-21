@@ -2,8 +2,7 @@ class Zoologico:
     def __init__(self, nombre = "", ubicacion = ""):
         self._nombre = nombre
         self._ubicacion = ubicacion
-        if  len(self._zonas) == 0:
-            self._zonas = []
+        self._zonas = []
 
 
     #metodos get y set

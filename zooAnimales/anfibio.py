@@ -34,7 +34,7 @@ class Anfibio(Animal):
         return len(cls._listado)
     
     @classmethod
-    def crarRana(cls, nombre = "", edad = 0, genero = ""):
+    def crearRana(cls, nombre = "", edad = 0, genero = ""):
         rana = Anfibio(nombre, edad, "selva", genero, "rojo", True)
         cls.ranas += 1
         return rana
