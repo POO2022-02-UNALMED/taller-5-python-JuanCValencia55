@@ -1,4 +1,3 @@
-from tkinter.tix import Select
 from animal import Animal
 
 class Anfibio(Animal):
