@@ -1,5 +1,4 @@
-from tty import setraw
-from animal import Animal
+from zooAnimales.animal import Animal
 
 class Reptil(Animal):
     _listado = []
